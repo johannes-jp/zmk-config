@@ -48,7 +48,7 @@
         };
 
         dot_a_lower {
-            bindings = <&kp ä>;
+            bindings = <&kp U+00E4>;
             key-positions = <DOT A>;
         };
 
