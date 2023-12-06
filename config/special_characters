@@ -1,0 +1,52 @@
+
+        auml {
+            bindings = <&kp &auml>;
+            key-positions = <DOT A>;
+        };
+
+        Auml {
+            bindings = <&kp &Auml>;
+            key-positions = <SHIFT DOT A>;
+        };
+
+        ouml {
+            bindings = <&kp ouml>;
+            key-positions = <DOT O>;
+        };
+
+        Ouml {
+            bindings = <&kp Ouml>;
+            key-positions = <SHIFT DOT O>;
+        };
+
+        eth {
+            bindings = <&kp &eth>;
+            key-positions = <E T>;
+        };
+
+        ETH {
+            bindings = <&kp &ETH>;
+            key-positions = <SHIFT E T>;
+        };
+
+        thorn {
+            bindings = <&kp &thorn>;
+            key-positions = <T H>;
+        };
+
+        THORN {
+            bindings = <&kp &THORN>;
+            key-positions = <SHIFT T H>;
+        };
+    };
+
+        ae {
+            bindings = <&kp &aelig>;
+            key-positions = <A E>;
+        };
+    };
+
+        AE {
+            bindings = <&kp &AElig>;
+            key-positions = <SHIFT A E>;
+        };
