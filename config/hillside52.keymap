@@ -33,7 +33,7 @@ ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
         compatible = "zmk,combos";
 
         thorn {
-            bindings = <&kp is_thorn>;
+            bindings = <&is_thorn>;
             key-positions = <16 33>;
         };
     };
