@@ -34,57 +34,57 @@
         };
 
         is_eth {
-            bindings = <&kp Z>;
+            bindings = <&is_eth>;
             key-positions = <25 33>;
         };
 
         is_aa {
-            bindings = <&kp A>;
+            bindings = <&is_aa>;
             key-positions = <0 13>;
         };
 
         is_ea {
-            bindings = <&kp E>;
+            bindings = <&is_ea>;
             key-positions = <0 20>;
         };
 
         is_ia {
-            bindings = <&kp I>;
+            bindings = <&is_ia>;
             key-positions = <0 21>;
         };
 
         is_oa {
-            bindings = <&kp O>;
+            bindings = <&is_oa>;
             key-positions = <0 22>;
         };
 
         is_ua {
-            bindings = <&kp U>;
+            bindings = <&is_ua>;
             key-positions = <0 8>;
         };
 
         is_ya {
-            bindings = <&kp Y>;
+            bindings = <&is_ya>;
             key-positions = <0 9>;
         };
 
         is_ae {
-            bindings = <&kp A>;
+            bindings = <&is_ae>;
             key-positions = <13 20>;
         };
 
         is_od {
-            bindings = <&kp O>;
+            bindings = <&is_od>;
             key-positions = <22 35>;
         };
 
         is_ad {
-            bindings = <&kp A>;
+            bindings = <&is_ad>;
             key-positions = <13 35>;
         };
 
         is_ao {
-            bindings = <&kp O>;
+            bindings = <&is_ao>;
             key-positions = <13 22>;
         };
     };
