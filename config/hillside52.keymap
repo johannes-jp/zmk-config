@@ -5,12 +5,12 @@
  */
 
 #include <behaviors.dtsi>
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/icelandic.dtsi"
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/icelandic.dtsi"
 
 #define QWERTY_L 0
 #define DVORAK_L 1
@@ -28,9 +28,64 @@
     combos {
         compatible = "zmk,combos";
 
-        thorn {
+        is_thorn {
             bindings = <&is_thorn>;
             key-positions = <16 33>;
+        };
+
+        is_eth {
+            bindings = <&kp Z>;
+            key-positions = <25 33>;
+        };
+
+        is_aa {
+            bindings = <&kp A>;
+            key-positions = <0 13>;
+        };
+
+        is_ea {
+            bindings = <&kp E>;
+            key-positions = <0 20>;
+        };
+
+        is_ia {
+            bindings = <&kp I>;
+            key-positions = <0 21>;
+        };
+
+        is_oa {
+            bindings = <&kp O>;
+            key-positions = <0 22>;
+        };
+
+        is_ua {
+            bindings = <&kp U>;
+            key-positions = <0 8>;
+        };
+
+        is_ya {
+            bindings = <&kp Y>;
+            key-positions = <0 9>;
+        };
+
+        is_ae {
+            bindings = <&kp A>;
+            key-positions = <13 20>;
+        };
+
+        is_od {
+            bindings = <&kp O>;
+            key-positions = <22 35>;
+        };
+
+        is_ad {
+            bindings = <&kp A>;
+            key-positions = <13 35>;
+        };
+
+        is_ao {
+            bindings = <&kp O>;
+            key-positions = <13 22>;
         };
     };
 
