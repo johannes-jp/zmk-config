@@ -64,7 +64,7 @@
         };
 
         is_ya {
-            bindings = <&yacute>;
+            bindings = <&is_ya>;
             key-positions = <0 9>;
         };
 
