@@ -29,7 +29,7 @@
         compatible = "zmk,combos";
 
         thorn {
-            bindings = <&is_thorn>;
+            bindings = <&kp T>;
             key-positions = <16 33>;
         };
     };
