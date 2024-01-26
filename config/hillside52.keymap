@@ -24,10 +24,6 @@
 #define Paste  LC(V)
 #define Redo   LC(Y)
 
-/* extra symbols */
-// euro sign
-ZMK_UNICODE_SINGLE(euro_sign, N2, N0, A, C)  // €
-
 / {
     combos {
         compatible = "zmk,combos";
