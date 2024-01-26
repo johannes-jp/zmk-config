@@ -23,6 +23,15 @@
 #define Redo   LC(Y)
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        thorn {
+            bindings = <&kp T>;
+            key-positions = <16 33>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
