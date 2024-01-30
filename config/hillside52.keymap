@@ -4,9 +4,9 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <behaviors.dtsi>
 #include "../zmk-nodefree-config/helper.h"
 #include "../zmk-nodefree-config/international_chars/nordic.dtsi"
-#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -28,8 +28,6 @@
     flavor = "hold-preferred";
     tapping-term-ms = <125>;
 };
-
-
 
 / {
     combos {
@@ -98,7 +96,6 @@
             timeout-ms = <25>;
             require-prior-idle-ms = <200>;
         };
-
     };
 
     keymap {
@@ -106,7 +103,6 @@
 
         colemak_layer {
             /* COLEMAK-DH
-
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | `     |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   ;   | BKSPC |
  * | TAB   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ENTER |
@@ -115,10 +111,10 @@
  */
 
             bindings = <
-&kp GRAVE  &kp Q                 &kp W         &kp F  &kp P              &kp B                                                                                   &kp J     &kp L     &kp U      &kp Y                  &kp SEMI  &kp BSPC
-&kp TAB    &lh_pht LEFT_SHIFT A  &kp R         &kp S  &kp T              &kp G                                                                                   &kp M     &kp N     &kp E      &rh_pht RIGHT_SHIFT I  &kp O     &kp ENTER
-&mo 3      &kp Z                 &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                  &kp SLASH  &kp K     &kp H     &kp COMMA  &kp DOT                &kp UP    &kp RSHFT
-&kp RCTRL  &kp ESC               &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT               &kp DOWN  &kp RIGHT
+&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                   &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
+&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                   &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
+&mo 3      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                  &kp SLASH  &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
+&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
