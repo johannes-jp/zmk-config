@@ -35,13 +35,8 @@
     combos {
         compatible = "zmk,combos";
 
-<<<<<<< HEAD
-        thorn {
-            bindings = <&kp T>;
-=======
         is_thorn {
             bindings = <&is_thorn>;
->>>>>>> origin/nodefree
             key-positions = <16 33>;
         };
 
