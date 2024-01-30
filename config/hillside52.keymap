@@ -4,11 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-/*
- * #include "../zmk-nodefree-config/helper.h"
- * #include "../zmk-nodefree-config/international_chars/nordic.dtsi"
- */
-
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/nordic.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
@@ -38,29 +35,30 @@
     };
 
     behaviors {
-        lh_pht: lh_pht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LH_PHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
-            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 31>;
-        };
-
-        rh_pht: rh_pht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "RH_PHT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            flavor = "tap-unless-interrupted";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 44 42>;
-        };
+// home row shift
+//        lh_pht: lh_pht {
+//            compatible = "zmk,behavior-hold-tap";
+//            label = "LH_PHT";
+//            bindings = <&kp>, <&kp>;
+//
+//            #binding-cells = <2>;
+//            tapping-term-ms = <100>;
+//            quick-tap-ms = <200>;
+//            flavor = "tap-unless-interrupted";
+//            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 31>;
+//        };
+//
+//        rh_pht: rh_pht {
+//            compatible = "zmk,behavior-hold-tap";
+//            label = "RH_PHT";
+//            bindings = <&kp>, <&kp>;
+//
+//            #binding-cells = <2>;
+//            tapping-term-ms = <100>;
+//            quick-tap-ms = <200>;
+//            flavor = "tap-unless-interrupted";
+//            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 44 42>;
+//        };
     };
 
     keymap {
@@ -79,7 +77,7 @@
 &kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                   &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
 &kp TAB    &lh_pht LEFT_SHIFT A    &kp R         &kp S  &kp T              &kp G                                                                                   &kp M     &kp N     &kp E      &kp I     &rh_pht RIGHT_SHIFT O     &kp ENTER
 &mo 3      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                  &kp SLASH  &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
-&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
+&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &mt RIGHT_SHIFT SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
