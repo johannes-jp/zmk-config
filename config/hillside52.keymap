@@ -29,6 +29,26 @@
     tapping-term-ms = <125>;
 };
 
+&lh_pht: left_positional_hold_tap {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "tap-unless-interrupted";
+    tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+    quick-tap-ms = <200>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 31>;    // <---[[right-hand keys]]
+};
+
+&rh_pht: right_positional_hold_tap {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    flavor = "tap-unless-interrupted";
+    tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+    quick-tap-ms = <200>;
+    bindings = <&kp>, <&kp>;
+    hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 25 26 27 28 29 30 39 44 42>;    // <---[[left-hand keys]]
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -97,6 +117,7 @@
             require-prior-idle-ms = <200>;
         };
 
+* ---- dummy combos for remembering position hold keys ------
         right-hold-trigger-keys {
             bindings = <&none>;
             key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 31>;
@@ -107,12 +128,14 @@
             key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 25 26 27 28 29 30 39 44 42>;
         };
     };
+*/
 
     keymap {
         compatible = "zmk,keymap";
 
         colemak_layer {
             /* COLEMAK-DH
+
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | `     |   Q   |   W   |   F   |   P   |   B   |-----------------------------------|   J   |   L   |   U   |   Y   |   ;   | BKSPC |
  * | TAB   |   A   |   R   |   S   |   T   |   G   |-----------------------------------|   M   |   N   |   E   |   I   |   O   | ENTER |
@@ -122,7 +145,7 @@
 
             bindings = <
 &kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                   &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
-&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                   &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
+&kp TAB    &lh_pht LEFT_SHIFT A    &kp R         &kp S  &kp T              &kp G                                                                                   &kp M     &kp N     &kp E      &rh_pht RIGHT_SHIFT I     &kp O     &kp ENTER
 &mo 3      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                  &kp SLASH  &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
 &kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
