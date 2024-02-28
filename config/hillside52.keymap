@@ -150,15 +150,6 @@
         };
     };
 
-    macros {
-        is_aa: is_aa {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "IS_AA";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
