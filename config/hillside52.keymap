@@ -9,22 +9,8 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/nordic.dtsi" 
-
-// ZMK_UNICODE_PAIR(is_aa,   N0, N0, E,  N1,   N0, N0, C,  N1)
-// ZMK_UNICODE_PAIR(is_ea,   N0, N0, E,  N9,   N0, N0, C,  N9)
-// ZMK_UNICODE_PAIR(is_ia,   N0, N0, E,  D,    N0, N0, C,  D)
-// ZMK_UNICODE_PAIR(is_oa,   N0, N0, F,  N3,   N0, N0, D,  N3)
-// ZMK_UNICODE_PAIR(is_ua,   N0, N0, F,  A,    N0, N0, D,  A)
-// ZMK_UNICODE_PAIR(is_ya,   N0, N0, F,  D,    N0, N0, D,  D)
-// ZMK_UNICODE_PAIR(is_ae,   N0, N0, E,  N6,   N0, N0, C,  N6)
-// ZMK_UNICODE_PAIR(is_od,   N0, N0, F,  N6,   N0, N0, D,  N6)
-// ZMK_UNICODE_PAIR(is_ad,   N0, N0, E,  N4,   N0, N0, C,  N4)
-// ZMK_UNICODE_PAIR(is_thorn,  N0, N0, F,  E,  N0, N0, D,  E)
-// ZMK_UNICODE_PAIR(is_eth,  N0, N0, F,  N0,   N0, N0, D,  N0)
-// ZMK_UNICODE_PAIR(is_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
+#include "../zmk-nodefree-config/international_chars/swedish.dtsi"
 
 #define COLEMK_L 0
 #define QWERTY_L 1
