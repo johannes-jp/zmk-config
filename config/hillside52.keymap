@@ -26,11 +26,11 @@
 
 &mt {
     flavor = "hold-preferred";
-    tapping-term-ms = <100>;
+    tapping-term-ms = <200>;
+    require-prior-idle-ms = <125>;
 };
 
 / {
-
     behaviors {
         // home row shift
         //        lh_pht: lh_pht {
@@ -56,6 +56,16 @@
         //            flavor = "tap-unless-interrupted";
         //            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 44 42>;
         //        };
+
+        hold_while_undecided: hold_while_undecided {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_WHILE_UNDECIDED";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <125>;
+        };
     };
 
     combos {
@@ -69,6 +79,7 @@
         is_thorn {
             bindings = <&is_thorn>;
             key-positions = <16 33>;
+            require-prior-idle-ms = <200>;
         };
 
         is_eth {
@@ -129,7 +140,6 @@
             timeout-ms = <25>;
             require-prior-idle-ms = <200>;
         };
-
     };
 
     keymap {
@@ -145,10 +155,10 @@
  */
 
             bindings = <
-&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                               &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
-&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                               &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
-&mo 3      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                  &kp SLASH              &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
-&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &mt RIGHT_SHIFT SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
+&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                                              &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
+&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                                              &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
+&mo 3      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                 &kp SLASH              &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
+&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &mt LCTRL RIGHT_BRACKET  &mo 4  &mt RIGHT_SHIFT SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
