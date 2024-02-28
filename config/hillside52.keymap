@@ -76,77 +76,77 @@
             key-positions = <44 45>;
         };
 
-        is_thorn {
-            bindings = <&is_thorn>;
-            key-positions = <16 33>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_eth {
-            bindings = <&is_eth>;
-            key-positions = <25 33>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_aa {
-            bindings = <&is_aa>;
-            key-positions = <0 13>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_ea {
-            bindings = <&is_ea>;
-            key-positions = <0 20>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_ia {
-            bindings = <&is_ia>;
-            key-positions = <0 21>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_oa {
-            bindings = <&is_oa>;
-            key-positions = <0 22>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_ua {
-            bindings = <&is_ua>;
-            key-positions = <0 8>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_ya {
-            bindings = <&is_ya>;
-            key-positions = <0 9>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_ae {
-            bindings = <&is_ae>;
-            key-positions = <13 20>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_od {
-            bindings = <&is_od>;
-            key-positions = <22 35>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_ad {
-            bindings = <&is_ad>;
-            key-positions = <13 35>;
-            require-prior-idle-ms = <200>;
-        };
-
-        is_ao {
-            bindings = <&is_ao>;
-            key-positions = <13 22>;
-            require-prior-idle-ms = <200>;
-        };
+//        is_thorn {
+//            bindings = <&is_thorn>;
+//            key-positions = <16 33>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_eth {
+//            bindings = <&is_eth>;
+//            key-positions = <25 33>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_aa {
+//            bindings = <&is_aa>;
+//            key-positions = <0 13>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_ea {
+//            bindings = <&is_ea>;
+//            key-positions = <0 20>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_ia {
+//            bindings = <&is_ia>;
+//            key-positions = <0 21>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_oa {
+//            bindings = <&is_oa>;
+//            key-positions = <0 22>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_ua {
+//            bindings = <&is_ua>;
+//            key-positions = <0 8>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_ya {
+//            bindings = <&is_ya>;
+//            key-positions = <0 9>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_ae {
+//            bindings = <&is_ae>;
+//            key-positions = <13 20>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_od {
+//            bindings = <&is_od>;
+//            key-positions = <22 35>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_ad {
+//            bindings = <&is_ad>;
+//            key-positions = <13 35>;
+//            require-prior-idle-ms = <200>;
+//        };
+//
+//        is_ao {
+//            bindings = <&is_ao>;
+//            key-positions = <13 22>;
+//            require-prior-idle-ms = <200>;
+//        };
     };
 
     keymap {
