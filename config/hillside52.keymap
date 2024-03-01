@@ -166,10 +166,10 @@
  */
 
             bindings = <
-&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                                              &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
-&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                                              &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
-&mo 3      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                 &kp SLASH              &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
-&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &mt LCTRL RIGHT_BRACKET  &mo 4  &mt RIGHT_SHIFT SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
+&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                   &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
+&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                   &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
+&mo 4      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                  &kp SLASH  &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
+&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 4 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
