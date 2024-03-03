@@ -4,14 +4,13 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/swedish.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-
-#include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/swedish.dtsi"
 
 #define COLEMK_L 0
 #define QWERTY_L 1
@@ -33,7 +32,6 @@
 
 / {
     behaviors {
-
         hold_while_undecided: hold_while_undecided {
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_WHILE_UNDECIDED";
@@ -69,7 +67,6 @@
         //            flavor = "tap-unless-interrupted";
         //            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 44 42>;
         //        };
-
     };
 
     combos {
@@ -166,10 +163,10 @@
  */
 
             bindings = <
-&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                   &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
-&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                   &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
-&mo 4      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                  &kp SLASH  &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
-&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 4 LEFT_BRACKET  &mt LEFT_SHIFT SPACE     &mt LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
+&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                                  &kp J     &kp L     &kp U      &kp Y     &kp SEMI  &kp BSPC
+&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                                  &kp M     &kp N     &kp E      &kp I     &kp O     &kp ENTER
+&mo 4      &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                 &kp SLASH  &kp K     &kp H     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
+&kp RCTRL  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 4 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &mt LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
