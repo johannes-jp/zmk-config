@@ -5,7 +5,7 @@
  */
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/international_chars/nordic.dtsi"
+// #include "../zmk-nodefree-config/international_chars/nordic.dtsi"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -24,6 +24,19 @@
 #define Copy   LC(C)
 #define Paste  LC(V)
 #define Redo   LC(Y)
+
+ZMK_UNICODE_PAIR(no_aa,   N0, N0, E,  N1,   N0, N0, C,  N1)
+ZMK_UNICODE_PAIR(no_ea,   N0, N0, E,  N9,   N0, N0, C,  N9)
+ZMK_UNICODE_PAIR(no_ia,   N0, N0, E,  D,    N0, N0, C,  D)
+ZMK_UNICODE_PAIR(no_oa,   N0, N0, F,  N3,   N0, N0, D,  N3)
+ZMK_UNICODE_PAIR(no_ua,   N0, N0, F,  A,    N0, N0, D,  A)
+ZMK_UNICODE_PAIR(no_ya,   N0, N0, F,  D,    N0, N0, D,  D)
+ZMK_UNICODE_PAIR(no_ae,   N0, N0, E,  N6,   N0, N0, C,  N6)
+ZMK_UNICODE_PAIR(no_od,   N0, N0, F,  N6,   N0, N0, D,  N6)
+ZMK_UNICODE_PAIR(no_ad,   N0, N0, E,  N4,   N0, N0, C,  N4)
+ZMK_UNICODE_PAIR(no_thorn,  N0, N0, F,  E,  N0, N0, D,  E)
+ZMK_UNICODE_PAIR(no_eth,  N0, N0, F,  N0,   N0, N0, D,  N0)
+ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
 &mt {
     flavor = "hold-preferred";
