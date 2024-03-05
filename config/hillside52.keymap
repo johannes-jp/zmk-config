@@ -289,14 +289,5 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
             //            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
-
-        accent_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &no_ua   &no_ya   &trans  &trans
-&trans  &no_aa   &trans  &trans  &trans  &trans                                  &trans  &trans  &no_ea   &no_ia   &no_oa   &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
-            >;
-        };
     };
 };
