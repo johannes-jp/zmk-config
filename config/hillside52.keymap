@@ -3,8 +3,9 @@
  *
  * SPDX-License-Identifier: MIT
  */
-// #include "../zmk-nodefree-config/helper.h"
-// #include "../zmk-nodefree-config/international_chars/swedish.dtsi"
+
+#include "../zmk-nodefree-config/helper.h"
+#include "../zmk-nodefree-config/international_chars/nordic.dtsi"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
