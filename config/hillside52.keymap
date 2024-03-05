@@ -90,27 +90,27 @@
         };
 
         thorn {
-            bindings = <&kp T>;
+            bindings = <&no_thorn>;
             key-positions = <16 33>;
         };
 
         eth {
-            bindings = <&kp Z>;
+            bindings = <&no_eth>;
             key-positions = <25 33>;
         };
 
-        o.. {
-            bindings = <&kp O>;
+        od {
+            bindings = <&no_od>;
             key-positions = <35 22>;
         };
 
-        a.. {
-            bindings = <&kp A>;
+        ad {
+            bindings = <&no_ad>;
             key-positions = <13 35>;
         };
 
         ao {
-            bindings = <&kp W>;
+            bindings = <&no_ao>;
             key-positions = <13 22>;
         };
 
@@ -185,15 +185,6 @@
         //            key-positions = <13 22>;
         //            require-prior-idle-ms = <200>;
         //        };
-    };
-
-    macros {
-        thorn_eth: thorn_eth {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "THORN_ETH";
-        };
     };
 
     keymap {
@@ -315,8 +306,8 @@
 
         accent_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &kp U   &kp Y   &trans  &trans
-&trans  &kp A   &trans  &trans  &trans  &trans                                  &trans  &trans  &kp E   &kp I   &kp O   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &no_ua   &no_ya   &trans  &trans
+&trans  &no_aa   &trans  &trans  &trans  &trans                                  &trans  &trans  &no_ea   &no_ia   &no_oa   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans
             >;
