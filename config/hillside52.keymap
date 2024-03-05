@@ -5,6 +5,7 @@
  */
 
 #include "../zmk-nodefree-config/helper.h"
+
 // #include "../zmk-nodefree-config/international_chars/nordic.dtsi"
 
 #include <behaviors.dtsi>
@@ -73,19 +74,19 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
             compatible = "zmk,behavior-hold-tap";
             label = "LH_PHT";
             bindings = <&kp>, <&kp>;
-        
+
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
             flavor = "tap-unless-interrupted";
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 32 33 34 35 31>;
         };
-        
+
         rh_pht: rh_pht {
             compatible = "zmk,behavior-hold-tap";
             label = "RH_PHT";
             bindings = <&kp>, <&kp>;
-        
+
             #binding-cells = <2>;
             tapping-term-ms = <100>;
             quick-tap-ms = <200>;
@@ -107,67 +108,67 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
             key-positions = <16 33>;
             require-prior-idle-ms = <200>;
         };
-        
+
         eth {
             bindings = <&no_eth>;
             key-positions = <25 33>;
             require-prior-idle-ms = <200>;
         };
-        
+
         aa {
             bindings = <&no_aa>;
             key-positions = <0 13>;
             require-prior-idle-ms = <200>;
         };
-        
+
         ea {
             bindings = <&no_ea>;
             key-positions = <0 20>;
             require-prior-idle-ms = <200>;
         };
-        
+
         ia {
             bindings = <&no_ia>;
             key-positions = <0 21>;
             require-prior-idle-ms = <200>;
         };
-        
+
         oa {
             bindings = <&no_oa>;
             key-positions = <0 22>;
             require-prior-idle-ms = <200>;
         };
-        
+
         ua {
             bindings = <&no_ua>;
             key-positions = <0 8>;
             require-prior-idle-ms = <200>;
         };
-        
+
         ya {
             bindings = <&no_ya>;
             key-positions = <0 9>;
             require-prior-idle-ms = <200>;
         };
-        
+
         ae {
             bindings = <&no_ae>;
             key-positions = <13 20>;
             require-prior-idle-ms = <200>;
         };
-        
+
         od {
             bindings = <&no_od>;
             key-positions = <22 35>;
             require-prior-idle-ms = <200>;
         };
-        
+
         ad {
             bindings = <&no_ad>;
             key-positions = <13 35>;
             require-prior-idle-ms = <200>;
         };
-        
+
         ao {
             bindings = <&no_ao>;
             key-positions = <13 22>;
@@ -191,7 +192,7 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 &lt_chars 6 GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
 &kp TAB            &kp A    &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
 &mo 4              &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
-&kp RCTRL          &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 4 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+&kp RCTRL          &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
             >;
 
             //            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
