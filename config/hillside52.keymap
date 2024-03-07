@@ -174,11 +174,6 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
             key-positions = <13 22>;
             require-prior-idle-ms = <200>;
         };
-
-        Shift+LCLK {
-            bindings = <&mkp RCLK>;
-            key-positions = <43 47>;
-        };
     };
 
     keymap {
