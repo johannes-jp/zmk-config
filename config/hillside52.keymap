@@ -51,11 +51,7 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_WHILE_UNDECIDED";
             bindings = <&kp>, <&kp>;
-
-            flavor = "hold-preferred"
-            #
-
-            binding-cells = <2>;
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             require-prior-idle-ms = <125>;
             hold-while-undecided;
