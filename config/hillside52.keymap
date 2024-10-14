@@ -51,6 +51,7 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
             compatible = "zmk,behavior-hold-tap";
             label = "HOLD_WHILE_UNDECIDED";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             require-prior-idle-ms = <125>;
@@ -266,6 +267,15 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
             >;
 
             //            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+
+        gaming_layer {
+            bindings = <
+&kp GRAVE  &kp Q    &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
+&kp TAB    &kp A    &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
+&kp DOT    &kp Z    &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
+&kp COMMA  &kp ESC  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+            >;
         };
     };
 };
