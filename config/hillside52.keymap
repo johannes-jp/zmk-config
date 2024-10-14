@@ -150,6 +150,16 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
             key-positions = <13 22>;
             require-prior-idle-ms = <200>;
         };
+
+        to_gaming {
+            bindings = <&to 6>;
+            key-positions = <1 2 3 4>;
+        };
+
+        to_main {
+            bindings = <&to 0>;
+            key-positions = <25 26 27 28>;
+        };
     };
 
     keymap {
