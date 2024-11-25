@@ -82,7 +82,7 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
         thorn {
             bindings = <&no_thorn>;
             key-positions = <16 33>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         eth {
@@ -157,6 +157,11 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
         };
 
         to_main {
+            bindings = <&to 2>;
+            key-positions = <25 26 27 28>;
+        };
+
+        to.main {
             bindings = <&to 0>;
             key-positions = <13 14 15 16>;
         };
