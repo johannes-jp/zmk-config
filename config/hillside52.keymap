@@ -180,10 +180,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
  */
 
             bindings = <
-&lt_chars 6 GRAVE                       &kp Q              &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
-&mt GREATER_THAN TAB                    &kp A              &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
-&mt LESS_THAN DELETE                    &kp Z              &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
-&mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt DELETE ESCAPE  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+&lt_chars 6 GRAVE                       &kp Q       &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
+&mt GREATER_THAN TAB                    &kp A       &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
+&mt LESS_THAN DELETE                    &kp Z       &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
+&mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp ESCAPE  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
             >;
 
             //            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -218,10 +218,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
  */
 
             bindings = <
-&kp GRAVE   &kp Q    &kp W      &kp E  &kp R     &kp T                                          &kp Y     &kp U     &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB     &kp A    &kp S      &kp D  &kp F     &kp G                                          &kp H     &kp J     &kp K      &kp L     &kp SEMI  &kp ENTER
-&kp LSHFT   &kp Z    &kp X      &kp C  &kp V     &kp B     &kp SQT                   &kp SLASH  &kp N     &kp M     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
-&kp C_MUTE  &kp ESC  &kp LCTRL         &kp LGUI  &kp LALT  &sk LSHIFT  &mo 4  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
+&kp GRAVE   &kp Q    &kp W         &kp E  &kp R              &kp T                                                                                                                &kp Y     &kp U     &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB     &kp A    &kp S         &kp D  &kp F              &kp G                                                                                                                &kp H     &kp J     &kp K      &kp L     &kp SEMI  &kp ENTER
+&kp LSHFT   &kp Z    &kp X         &kp C  &kp V              &kp B               &mt LEFT_ALT SQT                                                                      &kp SLASH  &kp N     &kp M     &kp COMMA  &kp DOT   &kp UP    &kp RSHFT
+&kp C_MUTE  &kp ESC  &kp LEFT_GUI         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LSHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT  &kp DOWN  &kp RIGHT
             >;
 
             //            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
