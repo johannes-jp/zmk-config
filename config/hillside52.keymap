@@ -81,9 +81,8 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
         thorn {
             bindings = <&no_thorn>;
-            key-positions = <16 33>;
+            key-positions = <33 28>;
             require-prior-idle-ms = <200>;
-            timeout-ms = <50>;
         };
 
         eth {
@@ -94,43 +93,43 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
         aa {
             bindings = <&no_aa>;
-            key-positions = <0 13>;
+            key-positions = <13 10>;
             require-prior-idle-ms = <200>;
         };
 
         ea {
             bindings = <&no_ea>;
-            key-positions = <0 20>;
+            key-positions = <20 10>;
             require-prior-idle-ms = <200>;
         };
 
         ia {
             bindings = <&no_ia>;
-            key-positions = <0 21>;
+            key-positions = <21 10>;
             require-prior-idle-ms = <200>;
         };
 
         oa {
             bindings = <&no_oa>;
-            key-positions = <0 22>;
+            key-positions = <22 10>;
             require-prior-idle-ms = <200>;
         };
 
         ua {
             bindings = <&no_ua>;
-            key-positions = <0 8>;
+            key-positions = <8 10>;
             require-prior-idle-ms = <200>;
         };
 
         ya {
             bindings = <&no_ya>;
-            key-positions = <0 9>;
+            key-positions = <9 10>;
             require-prior-idle-ms = <200>;
         };
 
         ae {
             bindings = <&no_ae>;
-            key-positions = <13 20>;
+            key-positions = <13 10>;
             require-prior-idle-ms = <200>;
         };
 
@@ -201,10 +200,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
  */
 
             bindings = <
-&lt_chars 7 GRAVE  &kp Q       &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
-&mt LG(TAB) TAB    &kp A       &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
-&kp BACKSPACE      &kp Z       &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
-&kp DELETE         &kp ESCAPE  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+&lt 7 GRAVE      &kp Q       &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
+&mt LG(TAB) TAB  &kp A       &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
+&kp BACKSPACE    &kp Z       &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
+&kp DELETE       &kp ESCAPE  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
             >;
 
             //            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
