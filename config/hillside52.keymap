@@ -201,10 +201,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
  */
 
             bindings = <
-&lt_chars 7 GRAVE                       &kp Q       &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
-&mt LG(TAB) TAB                         &kp A       &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
-&mt LESS_THAN DELETE                    &kp Z       &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
-&mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &kp ESCAPE  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+&lt_chars 7 GRAVE  &kp Q       &kp W         &kp F  &kp P              &kp B                                                                                                                    &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
+&mt LG(TAB) TAB    &kp A       &kp R         &kp S  &kp T              &kp G                                                                                                                    &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
+&kp BACKSPACE      &kp Z       &kp X         &kp C  &kp D              &kp V               &mt LEFT_ALT APOSTROPHE                                                                   &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
+&kp DELETE         &kp ESCAPE  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &hold_while_undecided LEFT_SHIFT SPACE  &hold_while_undecided LCTRL RIGHT_BRACKET  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
             >;
 
             //            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -316,10 +316,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
         gui_layer {
             bindings = <
-&trans  &trans  &kp LA(F4)  &trans  &kp LG(LC(LEFT))  &kp LG(LC(RIGHT))                                  &trans  &trans  &trans  &trans        &trans            &trans
-&trans  &trans  &trans      &trans  &trans            &trans                                             &trans  &trans  &trans  &trans        &trans            &trans
-&trans  &trans  &trans      &trans  &trans            &trans             &trans                  &trans  &trans  &trans  &trans  &trans        &kp LG(UP_ARROW)  &trans
-&trans  &trans  &trans              &trans            &trans             &trans  &trans  &trans  &trans  &trans  &trans          &kp LG(LEFT)  &kp LG(DOWN)      &kp LG(RIGHT)
+&trans  &kp LA(F4)  &kp LG(D)   &kp LG(E)   &kp LG(LC(LA(LS(LEFT))))  &kp LG(LC(LA(LS(RIGHT))))                                                    &trans  &kp LG(LC(LA(N1)))  &kp LG(LA(N2))  &kp LG(LC(LA(N3)))  &kp LG(LC(LA(N4)))  &kp LG(LC(LS(LA(LEFT))))
+&trans  &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)                &kp LG(N4)                                                                   &trans  &kp LG(H)           &kp LG(J)       &kp LG(K)           &kp LG(L)           &kp LG(LC(LS(RIGHT)))
+&trans  &trans      &trans      &trans      &mt LC(F4) LG(LC(D))      &trans                     &trans                                    &trans  &trans  &trans              &trans          &trans              &kp LG(UP_ARROW)    &trans
+&trans  &trans      &trans                  &trans                    &kp LG(LC(LEFT))           &kp LA(SPACE)  &kp LC(LG(RIGHT))  &trans  &trans  &trans  &trans                              &kp LG(LEFT)        &kp LG(DOWN)        &kp LG(RIGHT)
             >;
         };
     };
