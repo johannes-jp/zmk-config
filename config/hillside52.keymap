@@ -316,10 +316,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
         gui_layer {
             bindings = <
-&trans  &kp LA(F4)  &kp LG(D)   &kp LG(E)   &kp LG(LC(LA(LS(LEFT))))  &kp LG(LC(LA(LS(RIGHT))))                                                    &trans  &kp LG(LC(LA(N1)))  &kp LG(LA(N2))  &kp LG(LC(LA(N3)))  &kp LG(LC(LA(N4)))  &kp LG(LC(LS(LA(LEFT))))
-&trans  &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)                &kp LG(N4)                                                                   &trans  &kp LG(H)           &kp LG(J)       &kp LG(K)           &kp LG(L)           &kp LG(LC(LS(RIGHT)))
-&trans  &trans      &trans      &trans      &mt LC(F4) LG(LC(D))      &trans                     &trans                                    &trans  &trans  &trans              &trans          &trans              &kp LG(UP_ARROW)    &trans
-&trans  &trans      &trans                  &trans                    &kp LG(LC(LEFT))           &kp LA(SPACE)  &kp LC(LG(RIGHT))  &trans  &trans  &trans  &trans                              &kp LG(LEFT)        &kp LG(DOWN)        &kp LG(RIGHT)
+&trans  &kp LA(F4)  &kp LG(D)   &kp LG(E)   &kp LG(LC(LA(LS(LEFT))))  &kp LG(LC(LA(LS(RIGHT))))                                                        &trans  &kp LG(LC(LA(N1)))  &kp LG(LA(N2))  &kp LG(LC(LA(N3)))  &kp LG(LC(LA(N4)))  &kp LG(LC(LS(LA(LEFT))))
+&trans  &trans      &kp LG(N1)  &kp LG(N2)  &kp LG(N3)                &kp LG(N4)                                                                       &trans  &kp LG(H)           &kp LG(J)       &kp LG(K)           &kp LG(L)           &kp LG(LC(LS(RIGHT)))
+&trans  &trans      &trans      &trans      &mt LC(F4) LG(LC(D))      &trans                     &kp DOUBLE_QUOTES                             &trans  &trans  &trans              &trans          &trans              &kp LG(UP_ARROW)    &trans
+&trans  &trans      &trans                  &trans                    &kp LG(LC(LEFT))           &kp LA(SPACE)      &kp LC(LG(RIGHT))  &trans  &trans  &trans  &trans                              &kp LG(LEFT)        &kp LG(DOWN)        &kp LG(RIGHT)
             >;
         };
     };
