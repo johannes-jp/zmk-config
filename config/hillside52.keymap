@@ -321,5 +321,14 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 &trans  &trans      &trans                  &trans                         &kp LG(LC(LEFT))                  &kp LA(SPACE)      &kp LC(LG(RIGHT))  &trans  &trans  &trans  &trans                              &kp LG(LA(LS(LC(N4))))  &kp LG(LS(LC(LA(N2))))  &kp LG(LA(LS(LC(N6))))
             >;
         };
+
+        Starcraft_Layer {
+            bindings = <
+&lt 7 GRAVE  &kp Q       &kp W         &kp F  &kp P              &kp B                                                            &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
+&kp TAB      &kp A       &kp R         &kp S  &kp T              &kp G                                                            &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
+&kp PERIOD   &kp Z       &kp X         &kp C  &kp D              &kp V               &kp LEFT_ALT                      &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
+&kp COMMA    &kp ESCAPE  &kp LEFT_WIN         &kp LS(LA(LCTRL))  &lt 3 LEFT_BRACKET  &kp LEFT_SHIFT  &kp LCTRL  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+            >;
+        };
     };
 };
