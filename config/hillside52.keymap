@@ -324,10 +324,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
         Starcraft_Layer {
             bindings = <
-&kp F1      &kp F2      &kp F3        &kp F4  &kp F5  &kp F6                                                 &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
-&kp TAB     &kp A       &kp R         &kp S   &kp T   &kp G                                                  &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
-&kp PERIOD  &kp Z       &kp X         &kp C   &kp D   &kp V     &kp LEFT_ALT                      &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
-&kp COMMA   &kp ESCAPE  &kp LEFT_WIN          &trans  &kp HOME  &kp LEFT_SHIFT  &kp LCTRL  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+&kp F1           &kp F2      &kp F3     &kp F4  &kp F5     &kp F6                                                 &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
+&kp TAB          &kp A       &kp R      &kp S   &kp T      &kp G                                                  &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
+&kp KP_NUMBER_2  &kp Z       &kp X      &kp C   &kp D      &kp V     &kp LEFT_ALT                      &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
+&kp KP_N1        &kp ESCAPE  &kp KP_N3          &kp KP_N4  &kp HOME  &kp LEFT_SHIFT  &kp LCTRL  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
             >;
         };
     };
