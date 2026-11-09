@@ -152,7 +152,7 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
         };
 
         to_gaming {
-            bindings = <&to 0>;
+            bindings = <&to 8>;
             key-positions = <1 2 3 4>;
         };
 
