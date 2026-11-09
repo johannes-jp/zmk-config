@@ -12,8 +12,6 @@
 #     shield: reviung41
 #
 ---
-include:
-
 # Hillside 46
 #   Comment out below if you do not have this board, to save build time
 #  - board: nice_nano_v2
@@ -30,9 +28,10 @@ include:
 
 # Hillside 52
 #   Comment out below if you do not have this board, to save build time
-  - board: nice_nano_v2
+include:
+  - board: nice_nano@2.0.0//zmk
     shield: hillside52_left
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: hillside52_right
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0//zmk
     shield: settings_reset
