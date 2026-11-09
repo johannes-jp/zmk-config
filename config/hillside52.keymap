@@ -324,10 +324,10 @@ ZMK_UNICODE_PAIR(no_ao,   N0, N0, E,  N5,   N0, N0, C,  N5)
 
         gaming {
             bindings = <
-&kp GRAVE          &kp Q       &kp W       &kp F  &kp P  &kp B                                                            &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
-&kp TAB            &kp A       &kp R       &kp S  &kp T  &kp G                                                            &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
-&kp LEFT_BRACKET   &kp Z       &kp X       &kp C  &kp D  &kp V           &kp LEFT_ALT                    &kp SLASH        &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
-&kp RIGHT_BRACKET  &kp ESCAPE  &kp C_MUTE         &mo 3  &kp LEFT_SHIFT  &kp SPACE     &kp LCTRL  &mo 4  &kp RIGHT_SHIFT  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
+&kp GRAVE          &kp Q       &kp W         &kp F  &kp P                   &kp B                                               &kp J     &kp L     &kp U      &kp Y       &kp SEMI  &kp BSPC
+&kp TAB            &kp A       &kp R         &kp S  &kp T                   &kp G                                               &kp M     &kp N     &kp E      &kp I       &kp O     &kp ENTER
+&kp LEFT_BRACKET   &kp Z       &kp X         &kp C  &kp D                   &kp V  &kp LEFT_ALT                      &kp SLASH  &kp K     &kp H     &kp COMMA  &kp PERIOD  &kp UP    &kp RSHFT
+&kp RIGHT_BRACKET  &kp ESCAPE  &kp LEFT_GUI         &kp LA(LC(LEFT_SHIFT))  &mo 3  &kp LEFT_SHIFT  &kp LCTRL  &mo 4  &kp SPACE  &kp LALT  &kp RGUI             &kp LEFT    &kp DOWN  &kp RIGHT
             >;
         };
     };
