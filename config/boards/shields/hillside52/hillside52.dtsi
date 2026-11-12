@@ -5,11 +5,12 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,physical-layout = &hillside52_physical_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -28,6 +29,67 @@ RC(3,0) RC(3,1) RC(3,2)         RC(4,1) RC(4,2) RC(4,3) RC(4,4)   RC(4,7) RC(4,8
         >;
     };
 
+    hillside52_physical_layout: hillside52_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Hillside 52";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        keys = <
+            &key_physical_attrs 18 18  0   0  0 0 0
+            , <&key_physical_attrs 18 18 19   0  0 0 0>
+            , <&key_physical_attrs 18 18 38   0  0 0 0>
+            , <&key_physical_attrs 18 18 57   0  0 0 0>
+            , <&key_physical_attrs 18 18 76   0  0 0 0>
+            , <&key_physical_attrs 18 18 95   0  0 0 0>
+            , <&key_physical_attrs 18 18 200  0  0 0 0>
+            , <&key_physical_attrs 18 18 219  0  0 0 0>
+            , <&key_physical_attrs 18 18 238  0  0 0 0>
+            , <&key_physical_attrs 18 18 257  0  0 0 0>
+            , <&key_physical_attrs 18 18 276  0  0 0 0>
+            , <&key_physical_attrs 18 18 295  0  0 0 0>
+            , <&key_physical_attrs 18 18  0  19  0 0 0>
+            , <&key_physical_attrs 18 18 19  19  0 0 0>
+            , <&key_physical_attrs 18 18 38  19  0 0 0>
+            , <&key_physical_attrs 18 18 57  19  0 0 0>
+            , <&key_physical_attrs 18 18 76  19  0 0 0>
+            , <&key_physical_attrs 18 18 95  19  0 0 0>
+            , <&key_physical_attrs 18 18 200 19  0 0 0>
+            , <&key_physical_attrs 18 18 219 19  0 0 0>
+            , <&key_physical_attrs 18 18 238 19  0 0 0>
+            , <&key_physical_attrs 18 18 257 19  0 0 0>
+            , <&key_physical_attrs 18 18 276 19  0 0 0>
+            , <&key_physical_attrs 18 18 295 19  0 0 0>
+            , <&key_physical_attrs 18 18  0  38  0 0 0>
+            , <&key_physical_attrs 18 18 19  38  0 0 0>
+            , <&key_physical_attrs 18 18 38  38  0 0 0>
+            , <&key_physical_attrs 18 18 57  38  0 0 0>
+            , <&key_physical_attrs 18 18 76  38  0 0 0>
+            , <&key_physical_attrs 18 18 95  38  0 0 0>
+            , <&key_physical_attrs 18 18 120 57  0 0 0>
+            , <&key_physical_attrs 18 18 220 57  0 0 0>
+            , <&key_physical_attrs 18 18 200 38  0 0 0>
+            , <&key_physical_attrs 18 18 219 38  0 0 0>
+            , <&key_physical_attrs 18 18 238 38  0 0 0>
+            , <&key_physical_attrs 18 18 257 38  0 0 0>
+            , <&key_physical_attrs 18 18 276 38  0 0 0>
+            , <&key_physical_attrs 18 18 295 38  0 0 0>
+            , <&key_physical_attrs 18 18  0  57  0 0 0>
+            , <&key_physical_attrs 18 18 19  57  0 0 0>
+            , <&key_physical_attrs 18 18 38  57  0 0 0>
+            , <&key_physical_attrs 18 18 57  57  0 0 0>
+            , <&key_physical_attrs 18 18 76  57  0 0 0>
+            , <&key_physical_attrs 18 18 95  57  0 0 0>
+            , <&key_physical_attrs 18 18 114 57  0 0 0>
+            , <&key_physical_attrs 18 18 240 57  0 0 0>
+            , <&key_physical_attrs 18 18 259 57  0 0 0>
+            , <&key_physical_attrs 18 18 278 57  0 0 0>
+            , <&key_physical_attrs 18 18 297 57  0 0 0>
+            , <&key_physical_attrs 18 18 316 57  0 0 0>
+            , <&key_physical_attrs 18 18 335 57  0 0 0>
+            , <&key_physical_attrs 18 18 354 57  0 0 0>
+            ;
+    };
+
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
@@ -40,7 +102,6 @@ RC(3,0) RC(3,1) RC(3,2)         RC(4,1) RC(4,2) RC(4,3) RC(4,4)   RC(4,7) RC(4,8
             , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
-        
     };
 
 //    left_encoder: encoder_left {
@@ -65,5 +126,5 @@ RC(3,0) RC(3,1) RC(3,2)         RC(4,1) RC(4,2) RC(4,3) RC(4,4)   RC(4,7) RC(4,8
 //            compatible = "zmk,keymap-sensors";
 //            sensors = <&left_encoder &right_encoder>;
 //        };
-    
+
 };
